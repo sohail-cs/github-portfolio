@@ -337,3 +337,138 @@
       padding: 0 20px;
     }
   }
+
+/* Experience Page */
+.experience-page{
+  padding: 50px 20px
+}
+
+/* Main Title */
+.centered-title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.centered-title h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+/* Section Title */
+.experience-section{
+  margin-bottom:70px;
+}
+
+.experience-section .section-title{
+  font-size:32px;
+  font-weight:600;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  color: var(--text-color)
+}
+
+/* Experience Item Layout */
+.experience-item{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap:20px;
+}
+
+
+/* Number Icon */
+.experience-item .experience-icon{
+  width: 40px;
+  height: 40px;
+  background-color: var(--link-color);
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink:0;
+}
+
+/* Content */
+.experience-item .experience-content{
+  flex:1;
+}
+
+.experience-item .experience-content h3{
+  font-size:22px;
+  font-weight: 600;
+  margin-bottom:5px;
+}
+
+.experience-item .experience-content .position{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: val(--link-color);
+}
+
+.experience-item .experience-content u1{
+  list-style: disc inside;
+  padding-left: 10px;
+}
+
+.experience-item .experience-content ul li{
+  margin-bottom: 5px;
+}
+
+
+/* Projects*/
+.project-page{
+  padding: 50px 20px
+}
+
+/* Main Title */
+.centered-title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.centered-title h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+/* Section Title */
+.project-section{
+  margin-bottom:70px;
+}
+
+
+
+/*Projects */
+.image-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minimax(150px,1fr));
+  gap: 15px;
+  max-width: 700px;
+  margin:auto;
+}
+
+.image-grid a {
+  display:block;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 2px solid #333;
+  background: white;
+}
+
+
+.image-grid img{
+  width: 100%;
+  display: block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.image-grid a:hover img{
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
