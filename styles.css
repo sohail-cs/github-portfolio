@@ -355,69 +355,65 @@
   color: var(--text-color);
 }
 
-/* Section Title */
 .experience-section{
-  margin-bottom:70px;
+  padding: 150;
 }
 
-.experience-section .section-title{
-  font-size:32px;
-  font-weight:600;
-  text-decoration: underline;
-  margin-bottom: 40px;
-  color: var(--text-color)
+.experience-section h2{
+  text-align: center;
 }
 
-/* Experience Item Layout */
-.experience-item{
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 30px;
-  gap:20px;
+/* Card Grid Layout */
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.card{
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
 
-/* Number Icon */
-.experience-item .experience-icon{
-  width: 40px;
-  height: 40px;
-  background-color: var(--link-color);
-  color: #fff;
-  font-weight: bold;
+.card h3{
+  margin-top: 0;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  flex-shrink:0;
+  gap: 10px;
 }
 
-/* Content */
-.experience-item .experience-content{
-  flex:1;
+.card img{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
-.experience-item .experience-content h3{
-  font-size:22px;
-  font-weight: 600;
-  margin-bottom:5px;
+.card ul{
+  list-style:none;
+  padding: 0;
 }
 
-.experience-item .experience-content .position{
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: val(--link-color);
+.card ul li{
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.experience-item .experience-content u1{
-  list-style: disc inside;
-  padding-left: 10px;
+.materials-icons{
+  font-size: 20px;
+  vertical-align: middle;
 }
-
-.experience-item .experience-content ul li{
-  margin-bottom: 5px;
-}
-
 
 /* Projects*/
 .project-page{
@@ -436,39 +432,49 @@
   color: var(--text-color);
 }
 
-/* Section Title */
-.project-section{
-  margin-bottom:70px;
-}
-
-
-
-/*Projects */
-.image-grid {
-  display:grid;
-  grid-template-columns: repeat(auto-fill,minimax(150px,1fr));
-  gap: 15px;
-  max-width: 700px;
-  margin:auto;
-}
-
-.image-grid a {
-  display:block;
-  overflow: hidden;
-  border-radius: 12px;
-  border: 2px solid #333;
-  background: white;
-}
-
-
-.image-grid img{
-  width: 100%;
-  display: block;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-
-.image-grid a:hover img{
-  transform: scale(1.1);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
+/* Project Section */
+.project-section {
+    padding: 150px 100px;
+    margin-bottom: 150px;
+  }
+  
+.project-section h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+.project-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+.project-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+.project-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  
+.project-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+  
+.project-section .cells .cell span {
+    font-size: 18px;
+  }
+  
