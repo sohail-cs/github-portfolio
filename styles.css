@@ -433,48 +433,78 @@
 }
 
 /* Project Section */
-.project-section {
-    padding: 150px 100px;
-    margin-bottom: 150px;
-  }
+.project-page{
+  padding: 50px 20px
+}
+
+/* Main Title */
+.centered-title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.centered-title h1{
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.project-section{
+  padding: 150;
+}
+
+.project-section h2{
+  text-align: center;
+}
+
+/* Card Grid Layout */
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.card{
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
   
-.project-section h2 {
-    text-align: center;
-    font-size: 35px;
-  }
-  
-.project-section .text {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-.project-section .cells {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-.project-section .cells .cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  
-    width: 200px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1.5px solid #d3d3d3;
-    border-radius: 5px;
-  }
-  
-.project-section .cells .cell img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    border-radius: 2px;
-  }
-  
-.project-section .cells .cell span {
-    font-size: 18px;
-  }
-  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3{
+  margin-top: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card img{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.card ul{
+  list-style:none;
+  padding: 0;
+}
+
+.card ul li{
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.materials-icons{
+  font-size: 20px;
+  vertical-align: middle;
+}
