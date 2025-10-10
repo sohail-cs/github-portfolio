@@ -26,4 +26,4 @@ GitHub Pages – Hosting and deployment
 
 visit the link: https://sohail-cs.github.io/github-portfolio/
 
-
+![Screenshot](images/portfolio%20image.png)
